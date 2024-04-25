@@ -54,4 +54,47 @@ function valaszGeneral() {
         imageGep.src = "https://pngimg.com/uploads/scissors/scissors_PNG5.png";
     }
     console.log(valasztottFegyver);
+    setTimeout(eredmenySzamit, 1000);
+}
+
+function eredmenySzamit() {
+    if (userValasz === 1)
+        {
+            if (valasztottFegyver === 1)
+                egyenloseg();
+              else if (valasztottFegyver === 2)
+                veszteseg();
+              else if (valasztottFegyver === 3)
+                gyozelem();
+        }
+      else if (userValasz === 2)
+      {
+            if (valasztottFegyver === 1)
+                gyozelem();
+              else if (valasztottFegyver === 2)
+                egyenloseg();
+              else if (valasztottFegyver === 3)
+                veszteseg();
+      }
+      else if (userValasz === 3)
+      {
+            if (valasztottFegyver === 1)
+                veszteseg();
+              else if (valasztottFegyver === 2)
+                gyozelem();
+              else if (valasztottFegyver === 3)
+                egyenloseg();
+      }
+}
+
+function veszteseg() {
+    alert("Veszteseg");
+}
+
+function gyozelem() {
+    alert("Gyozelem");
+}
+
+function egyenloseg() {
+    alert("Egyenloseg");
 }
