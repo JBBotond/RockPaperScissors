@@ -99,6 +99,7 @@ function veszteseg() {
     para.style.fontSize = "xx-large";
     para.style.zIndex = 9999; // Set a high z-index value
     document.body.appendChild(para); // Append the element to the body or an appropriate container
+    para.scrollIntoView();
 }
 
 function gyozelem() {
@@ -111,6 +112,7 @@ function gyozelem() {
     para.style.fontSize = "xx-large";
     para.style.zIndex = 9999; // Set a high z-index value
     document.body.appendChild(para); // Append the element to the body or an appropriate container
+    para.scrollIntoView();
 }
 
 function egyenloseg() {
@@ -124,5 +126,6 @@ function egyenloseg() {
     para.style.fontSize = "xx-large";
     para.style.zIndex = 9999; // Set a high z-index value
     document.body.appendChild(para); // Append the element to the body or an appropriate container
+    para.scrollIntoView();
 }
 
