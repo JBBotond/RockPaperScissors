@@ -37,3 +37,17 @@ body .fegyverek img:hover{
 .gepValasz img:hover{
     cursor: not-allowed;
 }
+@media (max-width: 1024px) {
+    .fegyverek #rock, #paper, #scissors {
+        width: 100px;
+        height: 100px;
+    }
+    .fegyverek {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gepValasz #gep {
+        width: 100px;
+        height: 100px;
+    }
+}
