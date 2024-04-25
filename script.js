@@ -7,6 +7,7 @@ const fegyverek = document.querySelector(".fegyverek");
 let userValasz;
 let generaltValasz;
 let valasztottFegyver;
+let jatekSzama = 0;
 
 var imageRock = document.getElementById("rock");
 var imagePaper = document.getElementById("paper");
@@ -37,6 +38,7 @@ function valaszScissors() {
 }
 
 function valaszGeneral() {
+    jatekSzama++;
     generaltValasz = Math.random();
     console.log(generaltValasz);
     if (generaltValasz <= 0.33)
@@ -89,7 +91,7 @@ function eredmenySzamit() {
 
 function veszteseg() {
     const para = document.createElement("p");
-    para.innerText = "You lose!";
+    para.innerText = "You lose! Game count: " + jatekSzama;
     para.style.background = "red";
     para.style.position = "relative"; // Ensure the element has a positioned ancestor
     para.style.height = "100px";
@@ -101,7 +103,7 @@ function veszteseg() {
 
 function gyozelem() {
     const para = document.createElement("p");
-    para.innerText = "You win! Felicitacion!";
+    para.innerText = "You win! Felicitacion! Game count: " + jatekSzama;
     para.style.background = "green";
     para.style.position = "relative"; // Ensure the element has a positioned ancestor
     para.style.height = "100px";
@@ -113,7 +115,7 @@ function gyozelem() {
 
 function egyenloseg() {
     const para = document.createElement("p");
-    para.innerText = "Draw, try again!";
+    para.innerText = "Draw, try again! Game count: " + jatekSzama;
     para.style.background = "yellow";
     para.style.alignItems = "center";
     para.style.position = "relative"; // Ensure the element has a positioned ancestor
