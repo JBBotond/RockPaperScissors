@@ -88,13 +88,39 @@ function eredmenySzamit() {
 }
 
 function veszteseg() {
-    alert("Veszteseg");
+    const para = document.createElement("p");
+    para.innerText = "You lose!";
+    para.style.background = "red";
+    para.style.position = "relative"; // Ensure the element has a positioned ancestor
+    para.style.height = "100px";
+    para.style.textAlign = "center";
+    para.style.fontSize = "xx-large";
+    para.style.zIndex = 9999; // Set a high z-index value
+    document.body.appendChild(para); // Append the element to the body or an appropriate container
 }
 
 function gyozelem() {
-    alert("Gyozelem");
+    const para = document.createElement("p");
+    para.innerText = "You win! Felicitacion!";
+    para.style.background = "green";
+    para.style.position = "relative"; // Ensure the element has a positioned ancestor
+    para.style.height = "100px";
+    para.style.textAlign = "center";
+    para.style.fontSize = "xx-large";
+    para.style.zIndex = 9999; // Set a high z-index value
+    document.body.appendChild(para); // Append the element to the body or an appropriate container
 }
 
 function egyenloseg() {
-    alert("Egyenloseg");
+    const para = document.createElement("p");
+    para.innerText = "Draw, try again!";
+    para.style.background = "yellow";
+    para.style.alignItems = "center";
+    para.style.position = "relative"; // Ensure the element has a positioned ancestor
+    para.style.height = "100px";
+    para.style.textAlign = "center";
+    para.style.fontSize = "xx-large";
+    para.style.zIndex = 9999; // Set a high z-index value
+    document.body.appendChild(para); // Append the element to the body or an appropriate container
 }
+
